@@ -1,3 +1,17 @@
+from tabulate import tabulate
+
+def display_tax_table():
+    """Display the tax brackets in a table format."""
+    tax_brackets = [
+        ["< $500", "10% (0.10)"],
+        ["$500 - $1499", "15% (0.15)"],
+        ["$1500 - $2499", "20% (0.20)"],
+        ["$2500+", "30% (0.30)"]
+    ]
+    
+    print("\n Weekly Income Tax Brackets:")
+    print(tabulate(tax_brackets, headers=["Weekly Income", "Tax Rate"], tablefmt="grid"))
+
 def calculate_tax(weekly_income):
     """Calculate tax withholding based on weekly income brackets."""
     if weekly_income < 500:
@@ -10,7 +24,9 @@ def calculate_tax(weekly_income):
         tax_rate = 0.30
     return weekly_income * tax_rate
 
-while True:  # Start a loop to repeat the program
+# Loop to allow multiple calculations
+while True:
+    display_tax_table()  # Show tax brackets before user input
     try:
         weekly_income = float(input("\nEnter weekly income: $"))
         if weekly_income < 0:
@@ -20,8 +36,8 @@ while True:  # Start a loop to repeat the program
     except ValueError:
         print("Invalid input. Please enter a numeric value.")
     
-    # Ask the user if they want to run the program again
+    # Ask user if they want to calculate again
     again = input("\nWould you like to calculate another tax withholding? (yes/no): ").strip().lower()
     if again != "yes":
         print("Exiting program. Have a great day!")
-        break  # Exit the loop if user does not enter "yes"
+        break  # Exit loop if user enters "no"
