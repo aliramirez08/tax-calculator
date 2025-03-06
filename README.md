@@ -10,6 +10,10 @@ This Python program calculates the weekly tax withholding based on income bracke
 
 git clone <https://github.com/aliramirez08/tax-calculator.git>
 cd tax-calculator
+
+
 2. Run the script:
 python tax_calculator.py
+
+
 3. Enter your weekly income when prompted.
