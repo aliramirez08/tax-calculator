@@ -1,17 +1,14 @@
 # Tax Calculator
 
-This Python program calculates the weekly tax withholding based on income brackets.
+This Java/Python program calculates the weekly tax withholding for a customer based on their income. The tax rate is determined according to the following income brackets:
 
+Income < $500 → 10% tax
 
-Weekly Income → Tax Rate
+$500 ≤ Income < $1500 → 15% tax
 
-Less than $500 → 10%
+$1500 ≤ Income < $2500 → 20% tax
 
-$500 - $1499 → 15%
-
-$1500 - $2499 → 20%
-
-$2500 and above → 30%
+Income ≥ $2500 → 30% tax
 
 
 
