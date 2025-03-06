@@ -2,14 +2,14 @@
 
 This Python program calculates the weekly tax withholding based on income brackets.
 
-+-------------------+----------+
-| Weekly Income    | Tax Rate |
-+-------------------+----------+
-| Less than $500   | 10%      |
-| $500 - $1499     | 15%      |
-| $1500 - $2499    | 20%      |
-| $2500 and above  | 30%      |
-+-------------------+----------+
+
+Weekly Income    | Tax Rate
+
+Less than $500   | 10%
+$500 - $1499     | 15%
+$1500 - $2499    | 20%
+$2500 and above  | 30%
+
 
 
 ## **Usage**
